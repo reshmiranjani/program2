@@ -1,27 +1,22 @@
 #include <stdio.h>
-int main()
+
+int main ()
 {
-    int a,b,i,count;
-    scanf("%d %d", &a, &b);
-    while (a < b)
-    {
-        count = 0;
-
-        for(i = 2; i <= a/2; ++i)
-        {
-            if(a % i == 0)
-            {
-                count= 1;
-                break;
-            }
-        }
-
-        if (count == 0)
-            printf("%d ",a);
-
-        ++a;
-    }
-
-    return 0;
-
+   int a,b, i, j,count;
+   scanf("%d %d", &a, &b);
+   for (i =a+ 1; i <b; ++i)
+   {
+      count= 0;
+      for (j = 2; j <= i/2; ++j)
+      {
+         if (i % j == 0)
+         {
+            count = 1;
+            break;
+         }
+      }
+      if (count == 0) 
+          printf("%d ", i);
+   }
+   return 0;
 }
