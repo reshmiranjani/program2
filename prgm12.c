@@ -6,7 +6,7 @@ void main()
    int flag;
    scanf("%d",&N);
    j=N;
-   if(j<=1000)
+   if(j<=10000)
    {
        while(j!=0)
        {
